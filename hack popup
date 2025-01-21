@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Hacked Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #1e1e2f;
+      color: white;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #e63946;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d62839;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Click the Button</h1>
+    <button onclick="showHackedMessage()">Click Me</button>
+    <p id="hacked-message" style="display: none; font-size: 1.5rem; margin-top: 20px; color: #ff0000;">Your system is hacked!</p>
+  </div>
+
+  <script>
+    function showHackedMessage() {
+      // Display the hacked message
+      document.getElementById('hacked-message').style.display = 'block';
+
+      // Optional: Play a sound or trigger an alert for dramatic effect
+      alert("Your system is hacked!");
+    }
+  </script>
+</body>
+</html>
